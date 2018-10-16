@@ -1,0 +1,69 @@
+{
+    "name": "telnet-adapter",
+    "display_name": "Telnet",
+    "version": "0.0.1",
+    "main": "main.js",
+    "description": "Adapter for Telnet devices",
+    "keywords": [
+        "mozilla",
+        "iot",
+        "adapter",
+        "telnet"
+    ],
+    "homepage": "https://github.com/roderm/telnet-adapter",
+    "author": "roderm",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/roderm/telnet-adapter.git"
+    },
+    "bugs": {
+        "url": "https://github.com/roderm/telnet-adapter/issues"
+    },
+    "files": [
+        "main.js",
+        "LICENSE",
+        "lib/telnet-adapter.js",
+        "lib/telnet-db.js",
+        "lib/telnet-device.js",
+        "lib/telnet-file-loader.js"
+    ],
+    "moziot": {
+        "api": {
+            "min": 1,
+            "max": 2
+        },
+        "plugin": true,
+        "enabled": true,
+        "exec": "{nodeLoader} {path}",
+        "config": {
+            "HostSetup": []
+        },
+        "schema": {
+            "type": "object",
+            "properties": {
+                "HostSetup": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "required": [
+                            "host",
+                            "port",
+                            "commandset"
+                        ],
+                        "properties": {
+                            "host": {
+                                "type": "string"
+                            },
+                            "port": {
+                                "type": "number"
+                            },
+                            "commandset": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
