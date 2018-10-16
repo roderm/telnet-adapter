@@ -25,7 +25,9 @@
         "lib/telnet-adapter.js",
         "lib/telnet-db.js",
         "lib/telnet-device.js",
-        "lib/telnet-file-loader.js"
+        "lib/telnet-file-loader.js",
+        "lib/telnet-property.js",
+        "lib/telnet-service.js"
     ],
     "moziot": {
         "api": {
@@ -65,5 +67,8 @@
                 }
             }
         }
+    },
+    "dependencies": {
+        "rxjs": "^6.3.3"
     }
 }

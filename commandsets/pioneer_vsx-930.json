@@ -1,0 +1,36 @@
+[
+    {
+        "label": "Power Main",
+        "type": "boolean",
+        "@type": "OnOffProperty",
+        "description": "Set main-zone Power ",
+        "commands": {
+            "get": "?P",
+            "set": "P#",
+            "response": "PWR#",
+            "datatype": "setString_getBool",
+            "pullcycle": "1800",
+            "toggle": "PZ"
+        }
+    },
+    {
+        "label": "Volume Main",
+        "type": "number",
+        "@type": "LevelProperty",
+        "unit": "percent",
+        "description": "Set main-zone Volume",
+        "minimum": 0,
+        "maximum": 100,
+        "commands": {
+            "minimum": 0,
+            "maximum": 160,
+            "get": "?V",
+            "set": "###VL",
+            "up":"VU",
+            "down":"VD",
+            "response":"VOL###",
+            "datatype": "int",
+            "pullcycle": "120"
+        }
+    }
+]
