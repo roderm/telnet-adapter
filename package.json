@@ -27,7 +27,10 @@
         "lib/telnet-device.js",
         "lib/telnet-file-loader.js",
         "lib/telnet-property.js",
-        "lib/telnet-service.js"
+        "lib/telnet-service.js",
+        "lib/mappers/mapper_factory.js",
+        "lib/mappers/boolean_mapper.js",
+        "lib/mappers/level_mapper.js"
     ],
     "moziot": {
         "api": {

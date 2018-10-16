@@ -8,9 +8,22 @@
             "get": "?P",
             "set": "P#",
             "response": "PWR#",
-            "datatype": "setString_getBool",
+            "datatype": "pioneer_state",
             "pullcycle": "1800",
             "toggle": "PZ"
+        }
+    },
+    {
+        "label": "Mute Main",
+        "type": "boolean",
+        "@type": "OnOffProperty",
+        "description": "Set main-zone Power ",
+        "commands": {
+            "get": "?M",
+            "set": "M#",
+            "response": "MUT#",
+            "datatype": "pioneer_state",
+            "pullcycle": "120"
         }
     },
     {
@@ -30,6 +43,51 @@
             "down":"VD",
             "response":"VOL###",
             "datatype": "int",
+            "pullcycle": "120"
+        }
+    },
+    {
+        "label": "Power HD-Zone",
+        "type": "boolean",
+        "@type": "OnOffProperty",
+        "description": "Set main-zone Power ",
+        "commands": {
+            "get": "?ZEP",
+            "datatype": "pioneer_state",
+            "set": "ZE#",
+            "response": "ZEP#",
+            "pullcycle": "1800", 
+            "toggle": "ZZ"
+        }
+    },
+    {
+        "label": "Power HD-Zone",
+        "type": "boolean",
+        "@type": "OnOffProperty",
+        "description": "Set main-zone Power ",
+        "commands": {
+            "get": "?HZM",
+            "set": "HZM#",
+            "datatype": "pioneer_state",
+            "response": "HZMUT#",
+            "pullcycle": "120"
+        }
+    },
+    {
+        "label": "Volume HD-Zone",
+        "type": "number",
+        "@type": "LevelProperty",
+        "unit": "percent",
+        "description": "Set main-zone Volume",
+        "minimum": 0,
+        "maximum": 100,
+        "commands": {
+            "get": "?HZV",
+            "set": "##HZV",
+            "up":"HZU",
+            "down":"HZD",
+            "datatype": "int",
+            "response": "XV##",
             "pullcycle": "120"
         }
     }
