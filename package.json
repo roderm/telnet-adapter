@@ -32,7 +32,8 @@
         "lib/telnet-service.js",
         "lib/mappers/mapper_factory.js",
         "lib/mappers/boolean_mapper.js",
-        "lib/mappers/level_mapper.js"
+        "lib/mappers/level_mapper.js",
+        "lib/mappers/string_mapper.js"
     ],
     "dependencies": {
         "rxjs": "^6.3.3"
