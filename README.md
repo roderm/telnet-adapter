@@ -11,7 +11,7 @@ you need a running mozilla-iot gateway
 - install with ```npm install```
 - restart your gateway
 
-## Config Devices
+### Config Devices
 - Create a JSON-File like [./commandset/pioneer_vsx-930.json](./commandset/pioneer_vsx-930.json)
 - Upload your json to [Paste](https://pastebin.com/) or [GitHub](https://github.com/)
 - create link for raw file (e.g: https://pastebin.com/raw/bGgp8Fis or https://raw.githubusercontent.com/roderm/telnet-adapter/dev/lib/commandset/pioneer_vsx-930.json)
@@ -26,3 +26,4 @@ you need a running mozilla-iot gateway
 - Find a way to update JSON-Files with remove off old files
 - Mozilla-Iot file-upload support for simpler setup and easier update
 - More Datatypes
+- RegexMatching to Config
