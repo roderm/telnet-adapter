@@ -20,8 +20,10 @@
         "url": "https://github.com/roderm/telnet-adapter/issues"
     },
     "files": [
-        "main.js",
         "LICENSE",
+        "SHA256SUMS",
+        "main.js",
+        "node_modules",
         "lib/telnet-adapter.js",
         "lib/telnet-db.js",
         "lib/telnet-device.js",
@@ -32,6 +34,9 @@
         "lib/mappers/boolean_mapper.js",
         "lib/mappers/level_mapper.js"
     ],
+    "dependencies": {
+        "rxjs": "^6.3.3"
+    },
     "moziot": {
         "api": {
             "min": 1,
@@ -70,8 +75,5 @@
                 }
             }
         }
-    },
-    "dependencies": {
-        "rxjs": "^6.3.3"
     }
 }
