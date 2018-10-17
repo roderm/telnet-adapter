@@ -12,9 +12,9 @@ you need a running mozilla-iot gateway
 - restart your gateway
 
 ### Config Devices
-- Create a JSON-File like [./commandset/pioneer_vsx-930.json](./commandset/pioneer_vsx-930.json)
+- Create a JSON-File like [pioneer_vsx-930.json](https://github.com/roderm/telnet-adapter-commandsets/blob/master/pioneer_vsx-930.json)
 - Upload your json to [Paste](https://pastebin.com/) or [GitHub](https://github.com/)
-- create link for raw file (e.g: https://pastebin.com/raw/bGgp8Fis or https://raw.githubusercontent.com/roderm/telnet-adapter/dev/lib/commandset/pioneer_vsx-930.json)
+- create link for raw file (e.g: https://pastebin.com/raw/bGgp8Fis or https://raw.githubusercontent.com/roderm/telnet-adapter-commandsets/master/pioneer_vsx-930.json)
 - On your Gateway UI go to >Settings>Addons>Telnet Configure
     - Host: IP of your device
     - Port: port of your device
