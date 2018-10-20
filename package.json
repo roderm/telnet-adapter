@@ -1,7 +1,7 @@
 {
     "name": "telnet-adapter",
     "display_name": "Telnet",
-    "version": "0.0.2",
+    "version": "0.0.3-1",
     "main": "main.js",
     "description": "Adapter for Telnet devices",
     "keywords": [
